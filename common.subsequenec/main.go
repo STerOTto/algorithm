@@ -55,7 +55,7 @@ func commonSubSequenceWithoutRecursion(str1, str2 string) int {
 递归写法
 */
 func commonSubSequenceWithRecursion(str1, str2 string, i, j, endI, endJ int) int {
-	if i>=endI || j>=endJ {
+	if i>=endI || j>=endJ {//递归边界
 		return 0
 	}
 	if str1[i]==str2[j] {
